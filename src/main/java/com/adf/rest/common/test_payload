@@ -1,0 +1,30 @@
+
+     1st scenario : [ Account Creation ] 
+
+	{
+	    "accountHolderName": "Steve",
+	    "accountType": "Current",
+	    "dateofBirth": "2000-03-23",
+	    "initialDeposit": 2000.0
+	}
+
+
+
+
+     2nd scenario :  [ Transaction ]
+
+	{   
+	     "transactionAmount": 300.0,
+	     "transactionType": "withdraw"
+	}
+
+
+
+
+
+    3rd scenario : [ Transaction History ]
+
+	{
+	    "fromDate": "2021-07-17T19:47:56.443587",
+	    "toDate": "2021-07-17T19:47:56.444587"
+	}
