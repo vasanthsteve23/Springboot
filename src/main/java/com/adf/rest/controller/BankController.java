@@ -32,7 +32,7 @@ public class BankController {
     
     static final Logger logger = LogManager.getLogger(BankController.class.getName());
     
-   
+    
     @PostMapping(path="bank/account",consumes={"application/json"})
     public BankAccount home(@RequestBody CreateRequest obj)
     {
@@ -42,7 +42,6 @@ public class BankController {
         logger.info("Account created for "+obj.getAccountHolderName());
         objAcc.setAccountType(obj.getAccountType());
         objAcc.setDateofBirth(obj.getDateofBirth());
-        
         if ((obj.getInitialDeposit() != 0.0)){
              objAcc.setBalance(obj.getInitialDeposit());
         }
@@ -76,5 +75,6 @@ public class BankController {
         return objAcc;
     }
     
+   
 
 }
